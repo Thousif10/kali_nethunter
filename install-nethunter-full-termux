@@ -112,7 +112,7 @@ function check_dependencies() {
 
 function get_url() {
     ROOTFS_URL="${BASE_URL}/${IMAGE_NAME}"
-    #SHA_URL="${BASE_URL}/${SHA_NAME}"
+    
 }
 
 function get_rootfs() {
@@ -333,7 +333,8 @@ function print_banner() {
     printf "${blue}##  88     '88.   d8'        '8b  88        88  ##\n"
     printf "${blue}##  88       Y8b d8'          '8b 888888888 88  ##\n"
     printf "${blue}##                                              ##\n"
-    printf "${blue}####  ############# NetHunter ####################${reset}\n\n"
+    printf "${blue}####  ############# NetHunter ####################\n"
+    printf "${red} ############## Developed by THOUSIF K ############${reset}\n"
 }
 
 ##################################
@@ -362,7 +363,6 @@ set_strings
 prepare_fs
 check_dependencies
 get_rootfs
-get_sha
 verify_sha
 extract_rootfs
 create_launcher
